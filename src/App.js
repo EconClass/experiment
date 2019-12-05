@@ -7,7 +7,13 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Route path='/PokeTeam/' />
-        <Link to='/PokeTeam/'>Redirect</Link>
+        <Link to='/PokeTeam/'>
+          <h1
+            onClick={() => {
+              window.location.reload();
+            }}
+          >Click Me!</h1>
+        </Link>
       </header>
     </div>
   );
